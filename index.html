@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenco | Paiement en ligne</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Zenco</h1>
+        <p>Paiement sécurisé pour vos services web</p>
+    </header>
 
+    <main class="pricing-container">
+        <!-- Pack Essentiel -->
+        <div class="pricing-card">
+            <h3>Pack Essentiel</h3>
+            <div class="price">200€</div>
+            <ul>
+                <li>Site vitrine 1 page</li>
+                <li>Design responsive</li>
+                <li>Optimisation SEO de base</li>
+            </ul>
+            <button class="checkout-button" data-pack="essentiel">Acheter maintenant</button>
+        </div>
+
+        <!-- Pack Complet -->
+        <div class="pricing-card featured">
+            <span class="popular-badge">Populaire</span>
+            <h3>Pack Complet</h3>
+            <div class="price">360€</div>
+            <ul>
+                <li>Site multi-pages</li>
+                <li>Réservation en ligne</li>
+                <li>SEO avancé</li>
+            </ul>
+            <button class="checkout-button" data-pack="complet">Acheter maintenant</button>
+        </div>
+
+        <!-- Pack Premium -->
+        <div class="pricing-card">
+            <h3>Pack Premium</h3>
+            <div class="price">600€</div>
+            <ul>
+                <li>Site sur mesure</li>
+                <li>Backend personnalisé</li>
+                <li>Maintenance 1 mois</li>
+            </ul>
+            <button class="checkout-button" data-pack="premium">Acheter maintenant</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Zenco. Paiements sécurisés par <img src="https://stripe.com/img/v3/homepage/security/logos/stripe.svg" alt="Stripe" width="80"></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
